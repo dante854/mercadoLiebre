@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado liebre</title>
+    <link rel="stylesheet" href="/css/style-register.css">
+    <link href="/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel=" stylesheet ">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-header-top">
+            <div class="container-logo-search">
+                <div class="container-logo-mercado-liebre">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo de mercado libre" class="logo-mercado-liebre">
+                </div>
+
+                <form class="container-search">
+                    <input class="search" type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="container-compra-cuotas">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p class="compra-cuotas">Compra en cuotas y sin tarjetas de credito</p>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-bar-site">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+
+            <ul class="nav-bar-account">
+                <li><a href="/register">Crea tu cuenta <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="container-icono-hamburguesa">
+            <i class="icono-hamburguesa fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <form class="formulario" action="">
+            <h4>Iniciar Sesion</h4>
+
+            <div>
+                <label for="nameusr">Nombre de usuario:</label>
+                <input class="input" type="text" id="nameusr" placeholder="Ej: Juan_Perez25" required>
+            </div><br>
+
+            <div>
+                <label for="password">Contraseña:</label>
+                <input class="input" type="password" id="countri" placeholder="Password" required>
+            </div><br>
+
+            <button class="boton" type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

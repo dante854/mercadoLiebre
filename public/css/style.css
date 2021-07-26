@@ -1,0 +1,340 @@
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.container-logo-search {
+    max-height: 60px;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+}
+
+.container-logo-mercado-liebre {
+    padding: 5px;
+    width: 50%;
+}
+
+.logo-mercado-liebre {
+    width: 90%;
+    max-height: 50px;
+    margin: auto;
+}
+
+.container-search {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding: 5px;
+}
+
+.search {
+    border: none;
+    width: 70%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.container-search button {
+    border: none;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container-compra-cuotas {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compra-cuotas {
+    text-align: center;
+    display: inline-block;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+}
+
+.nav-bar-site {
+    padding: 0px;
+    display: none;
+    width: 50%;
+}
+
+.nav-bar-account {
+    padding: 0px;
+    display: none;
+    width: 50%;
+}
+
+.container-icono-hamburguesa {
+    width: 100%;
+    text-align: center;
+}
+
+.icono-hamburguesa {
+    background-color: #03264C;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+}
+
+aside {
+    width: 100%;
+}
+
+.form-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-producto div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.form-producto div label {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.field {
+    width: 100%;
+    padding: 8px;
+}
+
+.form-producto button {
+    width: 30%;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #03264C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.article {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.article img {
+    width: 100%;
+}
+
+.container-info-producto {
+    border-top: solid 1px rgb(233, 233, 233);
+    padding: 15px;
+    position: relative;
+}
+
+.truck {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.container-precio-descuento {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.precios {
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.descuentos {
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+}
+
+.descripciones {
+    font-size: 16px;
+    font-family: 'Roboto';
+    opacity: 0;
+    transition: all 1s;
+}
+
+.descripciones:hover {
+    opacity: 1;
+}
+
+.descripciones:hover footer {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.container-section-footer {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-section-footer h5 {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.container-section-footer p {
+    margin: 0px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto';
+    max-width: 400px;
+}
+
+.icono-footer {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.container-copyright {
+    width: 100%;
+}
+
+.copyright {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    .container-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-logo-search {
+        width: 63%;
+    }
+    .container-compra-cuotas {
+        width: 30%;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .nav-bar-account {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    .nav-bar-site {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container-icono-hamburguesa {
+        display: none;
+    }
+    .search {
+        width: 100%;
+    }
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .article {
+        width: 40%;
+        margin: 5%;
+    }
+    .article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .container-general-footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .icono-footer:hover {
+        color: #39b54a;
+    }
+}
+
+@media (min-width:1280px) {
+    .article {
+        width: 20%;
+        margin: 2%;
+    }
+}
